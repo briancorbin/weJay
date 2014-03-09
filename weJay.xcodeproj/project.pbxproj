@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E89A8FB418CCBB9A000F176D /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89A8FB318CCBB9A000F176D /* MainMenuViewController.m */; };
+		E89A8FB618CCBBBC000F176D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89A8FB518CCBBBC000F176D /* MediaPlayer.framework */; };
 		E8D1333718A594C8005932DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D1333618A594C8005932DF /* Foundation.framework */; };
 		E8D1333918A594C8005932DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D1333818A594C8005932DF /* CoreGraphics.framework */; };
 		E8D1333B18A594C8005932DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D1333A18A594C8005932DF /* UIKit.framework */; };
@@ -15,13 +17,13 @@
 		E8D1334718A594C8005932DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D1334618A594C8005932DF /* AppDelegate.m */; };
 		E8D1334A18A594C8005932DF /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D1334818A594C8005932DF /* Main_iPhone.storyboard */; };
 		E8D1334D18A594C8005932DF /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D1334B18A594C8005932DF /* Main_iPad.storyboard */; };
-		E8D1335018A594C8005932DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D1334F18A594C8005932DF /* ViewController.m */; };
 		E8D1335218A594C8005932DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D1335118A594C8005932DF /* Images.xcassets */; };
 		E8D1335918A594C8005932DF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D1335818A594C8005932DF /* XCTest.framework */; };
 		E8D1335A18A594C8005932DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D1333618A594C8005932DF /* Foundation.framework */; };
 		E8D1335B18A594C8005932DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D1333A18A594C8005932DF /* UIKit.framework */; };
 		E8D1336318A594C8005932DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E8D1336118A594C8005932DF /* InfoPlist.strings */; };
 		E8D1336518A594C8005932DF /* weJayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D1336418A594C8005932DF /* weJayTests.m */; };
+		E8D1337818A5BCE2005932DF /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D1337718A5BCE2005932DF /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E89A8FB218CCBB9A000F176D /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		E89A8FB318CCBB9A000F176D /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		E89A8FB518CCBBBC000F176D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		E8D1333318A594C8005932DF /* weJay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weJay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D1333618A594C8005932DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E8D1333818A594C8005932DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,14 +52,13 @@
 		E8D1334618A594C8005932DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E8D1334918A594C8005932DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		E8D1334C18A594C8005932DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		E8D1334E18A594C8005932DF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E8D1334F18A594C8005932DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E8D1335118A594C8005932DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E8D1335718A594C8005932DF /* weJayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weJayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D1335818A594C8005932DF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E8D1336018A594C8005932DF /* weJayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "weJayTests-Info.plist"; sourceTree = "<group>"; };
 		E8D1336218A594C8005932DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E8D1336418A594C8005932DF /* weJayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weJayTests.m; sourceTree = "<group>"; };
+		E8D1337718A5BCE2005932DF /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E89A8FB618CCBBBC000F176D /* MediaPlayer.framework in Frameworks */,
+				E8D1337818A5BCE2005932DF /* CoreBluetooth.framework in Frameworks */,
 				E8D1333918A594C8005932DF /* CoreGraphics.framework in Frameworks */,
 				E8D1333B18A594C8005932DF /* UIKit.framework in Frameworks */,
 				E8D1333718A594C8005932DF /* Foundation.framework in Frameworks */,
@@ -103,6 +109,8 @@
 		E8D1333518A594C8005932DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E89A8FB518CCBBBC000F176D /* MediaPlayer.framework */,
+				E8D1337718A5BCE2005932DF /* CoreBluetooth.framework */,
 				E8D1333618A594C8005932DF /* Foundation.framework */,
 				E8D1333818A594C8005932DF /* CoreGraphics.framework */,
 				E8D1333A18A594C8005932DF /* UIKit.framework */,
@@ -118,10 +126,10 @@
 				E8D1334618A594C8005932DF /* AppDelegate.m */,
 				E8D1334818A594C8005932DF /* Main_iPhone.storyboard */,
 				E8D1334B18A594C8005932DF /* Main_iPad.storyboard */,
-				E8D1334E18A594C8005932DF /* ViewController.h */,
-				E8D1334F18A594C8005932DF /* ViewController.m */,
 				E8D1335118A594C8005932DF /* Images.xcassets */,
 				E8D1333D18A594C8005932DF /* Supporting Files */,
+				E89A8FB218CCBB9A000F176D /* MainMenuViewController.h */,
+				E89A8FB318CCBB9A000F176D /* MainMenuViewController.m */,
 			);
 			path = weJay;
 			sourceTree = "<group>";
@@ -253,8 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8D1335018A594C8005932DF /* ViewController.m in Sources */,
 				E8D1334718A594C8005932DF /* AppDelegate.m in Sources */,
+				E89A8FB418CCBB9A000F176D /* MainMenuViewController.m in Sources */,
 				E8D1334318A594C8005932DF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +482,7 @@
 				E8D1336A18A594C8005932DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8D1336B18A594C8005932DF /* Build configuration list for PBXNativeTarget "weJayTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +491,7 @@
 				E8D1336D18A594C8005932DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
