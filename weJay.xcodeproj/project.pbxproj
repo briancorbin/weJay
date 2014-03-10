@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E89A8FB418CCBB9A000F176D /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89A8FB318CCBB9A000F176D /* MainMenuViewController.m */; };
 		E89A8FB618CCBBBC000F176D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89A8FB518CCBBBC000F176D /* MediaPlayer.framework */; };
+		E89A8FB918CCBE67000F176D /* StartAPartyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89A8FB818CCBE67000F176D /* StartAPartyViewController.m */; };
+		E89A8FBC18CD5A58000F176D /* SelectPartyPlaylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89A8FBB18CD5A58000F176D /* SelectPartyPlaylistViewController.m */; };
 		E8D1333718A594C8005932DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D1333618A594C8005932DF /* Foundation.framework */; };
 		E8D1333918A594C8005932DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D1333818A594C8005932DF /* CoreGraphics.framework */; };
 		E8D1333B18A594C8005932DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D1333A18A594C8005932DF /* UIKit.framework */; };
@@ -40,6 +42,10 @@
 		E89A8FB218CCBB9A000F176D /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		E89A8FB318CCBB9A000F176D /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		E89A8FB518CCBBBC000F176D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		E89A8FB718CCBE67000F176D /* StartAPartyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartAPartyViewController.h; sourceTree = "<group>"; };
+		E89A8FB818CCBE67000F176D /* StartAPartyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartAPartyViewController.m; sourceTree = "<group>"; };
+		E89A8FBA18CD5A58000F176D /* SelectPartyPlaylistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectPartyPlaylistViewController.h; path = ../SelectPartyPlaylistViewController.h; sourceTree = "<group>"; };
+		E89A8FBB18CD5A58000F176D /* SelectPartyPlaylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectPartyPlaylistViewController.m; path = ../SelectPartyPlaylistViewController.m; sourceTree = "<group>"; };
 		E8D1333318A594C8005932DF /* weJay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weJay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D1333618A594C8005932DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E8D1333818A594C8005932DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,6 +136,10 @@
 				E8D1333D18A594C8005932DF /* Supporting Files */,
 				E89A8FB218CCBB9A000F176D /* MainMenuViewController.h */,
 				E89A8FB318CCBB9A000F176D /* MainMenuViewController.m */,
+				E89A8FB718CCBE67000F176D /* StartAPartyViewController.h */,
+				E89A8FB818CCBE67000F176D /* StartAPartyViewController.m */,
+				E89A8FBA18CD5A58000F176D /* SelectPartyPlaylistViewController.h */,
+				E89A8FBB18CD5A58000F176D /* SelectPartyPlaylistViewController.m */,
 			);
 			path = weJay;
 			sourceTree = "<group>";
@@ -261,6 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E89A8FB918CCBE67000F176D /* StartAPartyViewController.m in Sources */,
+				E89A8FBC18CD5A58000F176D /* SelectPartyPlaylistViewController.m in Sources */,
 				E8D1334718A594C8005932DF /* AppDelegate.m in Sources */,
 				E89A8FB418CCBB9A000F176D /* MainMenuViewController.m in Sources */,
 				E8D1334318A594C8005932DF /* main.m in Sources */,

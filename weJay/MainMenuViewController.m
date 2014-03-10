@@ -10,6 +10,9 @@
 
 @interface MainMenuViewController ()
 
+- (IBAction)startAPartyAction:(id)sender;
+- (IBAction)startAParty:(id)sender;
+
 @end
 
 @implementation MainMenuViewController
@@ -27,6 +30,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.navigationController.navigationBarHidden = YES;
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,4 +44,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)startAPartyAction:(id)sender {
+    [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"StartAPartyViewController"] animated:YES];
+}
+
+- (IBAction)startAParty:(id)sender {
+}
 @end
