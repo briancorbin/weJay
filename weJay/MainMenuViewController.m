@@ -11,7 +11,7 @@
 @interface MainMenuViewController ()
 
 - (IBAction)startAPartyAction:(id)sender;
-- (IBAction)startAParty:(id)sender;
+- (IBAction)joinAPartyAction:(id)sender;
 
 @end
 
@@ -31,6 +31,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.navigationController.navigationBarHidden = YES;
+    UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Cancel" style:UIBarButtonItemStylePlain target:Nil action:nil];
+    [self.navigationItem setBackBarButtonItem:backButtonItem];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -48,6 +50,6 @@
     [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"StartAPartyViewController"] animated:YES];
 }
 
-- (IBAction)startAParty:(id)sender {
+- (IBAction)joinAPartyAction:(id)sender {
 }
 @end

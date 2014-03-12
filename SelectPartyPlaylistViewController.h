@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import "DataManager.h"
+#import "PartyMasterViewController.h"
 
 @interface SelectPartyPlaylistViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 

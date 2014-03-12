@@ -11,6 +11,9 @@
 		E89A8FB618CCBBBC000F176D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89A8FB518CCBBBC000F176D /* MediaPlayer.framework */; };
 		E89A8FB918CCBE67000F176D /* StartAPartyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89A8FB818CCBE67000F176D /* StartAPartyViewController.m */; };
 		E89A8FBC18CD5A58000F176D /* SelectPartyPlaylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89A8FBB18CD5A58000F176D /* SelectPartyPlaylistViewController.m */; };
+		E89A8FBF18CFEAB8000F176D /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E89A8FBE18CFEAB8000F176D /* DataManager.m */; };
+		E89A8FC218CFEB61000F176D /* DominantColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E89A8FC118CFEB61000F176D /* DominantColor.m */; };
+		E89A8FC818CFF978000F176D /* PartyMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89A8FC718CFF978000F176D /* PartyMasterViewController.m */; };
 		E8D1333718A594C8005932DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D1333618A594C8005932DF /* Foundation.framework */; };
 		E8D1333918A594C8005932DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D1333818A594C8005932DF /* CoreGraphics.framework */; };
 		E8D1333B18A594C8005932DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D1333A18A594C8005932DF /* UIKit.framework */; };
@@ -46,6 +49,12 @@
 		E89A8FB818CCBE67000F176D /* StartAPartyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartAPartyViewController.m; sourceTree = "<group>"; };
 		E89A8FBA18CD5A58000F176D /* SelectPartyPlaylistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectPartyPlaylistViewController.h; path = ../SelectPartyPlaylistViewController.h; sourceTree = "<group>"; };
 		E89A8FBB18CD5A58000F176D /* SelectPartyPlaylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectPartyPlaylistViewController.m; path = ../SelectPartyPlaylistViewController.m; sourceTree = "<group>"; };
+		E89A8FBD18CFEAB8000F176D /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataManager.h; path = ../DataManager.h; sourceTree = "<group>"; };
+		E89A8FBE18CFEAB8000F176D /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataManager.m; path = ../DataManager.m; sourceTree = "<group>"; };
+		E89A8FC018CFEB61000F176D /* DominantColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DominantColor.h; sourceTree = "<group>"; };
+		E89A8FC118CFEB61000F176D /* DominantColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DominantColor.m; sourceTree = "<group>"; };
+		E89A8FC618CFF978000F176D /* PartyMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartyMasterViewController.h; sourceTree = "<group>"; };
+		E89A8FC718CFF978000F176D /* PartyMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartyMasterViewController.m; sourceTree = "<group>"; };
 		E8D1333318A594C8005932DF /* weJay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weJay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D1333618A594C8005932DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E8D1333818A594C8005932DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,6 +137,10 @@
 		E8D1333C18A594C8005932DF /* weJay */ = {
 			isa = PBXGroup;
 			children = (
+				E89A8FBD18CFEAB8000F176D /* DataManager.h */,
+				E89A8FBE18CFEAB8000F176D /* DataManager.m */,
+				E89A8FC018CFEB61000F176D /* DominantColor.h */,
+				E89A8FC118CFEB61000F176D /* DominantColor.m */,
 				E8D1334518A594C8005932DF /* AppDelegate.h */,
 				E8D1334618A594C8005932DF /* AppDelegate.m */,
 				E8D1334818A594C8005932DF /* Main_iPhone.storyboard */,
@@ -140,6 +153,8 @@
 				E89A8FB818CCBE67000F176D /* StartAPartyViewController.m */,
 				E89A8FBA18CD5A58000F176D /* SelectPartyPlaylistViewController.h */,
 				E89A8FBB18CD5A58000F176D /* SelectPartyPlaylistViewController.m */,
+				E89A8FC618CFF978000F176D /* PartyMasterViewController.h */,
+				E89A8FC718CFF978000F176D /* PartyMasterViewController.m */,
 			);
 			path = weJay;
 			sourceTree = "<group>";
@@ -272,10 +287,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E89A8FB918CCBE67000F176D /* StartAPartyViewController.m in Sources */,
+				E89A8FC818CFF978000F176D /* PartyMasterViewController.m in Sources */,
+				E89A8FBF18CFEAB8000F176D /* DataManager.m in Sources */,
 				E89A8FBC18CD5A58000F176D /* SelectPartyPlaylistViewController.m in Sources */,
 				E8D1334718A594C8005932DF /* AppDelegate.m in Sources */,
 				E89A8FB418CCBB9A000F176D /* MainMenuViewController.m in Sources */,
 				E8D1334318A594C8005932DF /* main.m in Sources */,
+				E89A8FC218CFEB61000F176D /* DominantColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

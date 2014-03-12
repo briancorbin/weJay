@@ -39,9 +39,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.title = @"Party Options";
 	// Do any additional setup after loading the view.
     continueBtn.userInteractionEnabled = NO;
     continueBtn.hidden = YES;
+    
+    UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:Nil action:nil];
+    [self.navigationItem setBackBarButtonItem:backButtonItem];
 }
 
 - (void)didReceiveMemoryWarning
