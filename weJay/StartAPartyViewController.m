@@ -14,13 +14,15 @@
 @property (weak, nonatomic) IBOutlet UITextField *partyNameTF;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTF;
 
+@property (weak, nonatomic) DataManager *dataManager;
+
 - (IBAction)continueAction:(id)sender;
 
 @end
 
 @implementation StartAPartyViewController
 
-@synthesize continueBtn, partyNameTF, passwordTF;
+@synthesize continueBtn, partyNameTF, passwordTF, dataManager;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,6 +41,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    dataManager = [DataManager sharedInstance];
+    
     self.navigationItem.title = @"Party Options";
 	// Do any additional setup after loading the view.
     continueBtn.userInteractionEnabled = NO;
@@ -73,6 +78,9 @@
 }
 
 - (IBAction)continueAction:(id)sender {
+    dataManager.partyName = partyNameTF.text;
+    dataManager.partyPassword = passwordTF.text;
+    
     [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"SelectPartyPlaylistViewController"] animated:YES];
 }
 @end

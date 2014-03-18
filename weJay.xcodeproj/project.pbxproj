@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8227F5618D22D7A00A448AB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8227F5518D22D7A00A448AB /* SWRevealViewController.m */; };
+		E8227F5A18D22E0400A448AB /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = E8227F5818D22E0400A448AB /* menu.png */; };
+		E8227F5B18D22E0400A448AB /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8227F5918D22E0400A448AB /* menu@2x.png */; };
+		E8227F6018D6473600A448AB /* nextSong.png in Resources */ = {isa = PBXBuildFile; fileRef = E8227F5C18D6473600A448AB /* nextSong.png */; };
+		E8227F6118D6473600A448AB /* pauseSong.png in Resources */ = {isa = PBXBuildFile; fileRef = E8227F5D18D6473600A448AB /* pauseSong.png */; };
+		E8227F6218D6473600A448AB /* playSong.png in Resources */ = {isa = PBXBuildFile; fileRef = E8227F5E18D6473600A448AB /* playSong.png */; };
+		E8227F6318D6473600A448AB /* prevSong.png in Resources */ = {isa = PBXBuildFile; fileRef = E8227F5F18D6473600A448AB /* prevSong.png */; };
 		E89A8FB418CCBB9A000F176D /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89A8FB318CCBB9A000F176D /* MainMenuViewController.m */; };
 		E89A8FB618CCBBBC000F176D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89A8FB518CCBBBC000F176D /* MediaPlayer.framework */; };
 		E89A8FB918CCBE67000F176D /* StartAPartyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89A8FB818CCBE67000F176D /* StartAPartyViewController.m */; };
@@ -42,6 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E8227F5418D22D7A00A448AB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		E8227F5518D22D7A00A448AB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		E8227F5818D22E0400A448AB /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		E8227F5918D22E0400A448AB /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		E8227F5C18D6473600A448AB /* nextSong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextSong.png; sourceTree = "<group>"; };
+		E8227F5D18D6473600A448AB /* pauseSong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pauseSong.png; sourceTree = "<group>"; };
+		E8227F5E18D6473600A448AB /* playSong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playSong.png; sourceTree = "<group>"; };
+		E8227F5F18D6473600A448AB /* prevSong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prevSong.png; sourceTree = "<group>"; };
 		E89A8FB218CCBB9A000F176D /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		E89A8FB318CCBB9A000F176D /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		E89A8FB518CCBBBC000F176D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -102,6 +117,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E8227F5718D22D8700A448AB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E8227F5C18D6473600A448AB /* nextSong.png */,
+				E8227F5D18D6473600A448AB /* pauseSong.png */,
+				E8227F5E18D6473600A448AB /* playSong.png */,
+				E8227F5F18D6473600A448AB /* prevSong.png */,
+				E8227F5818D22E0400A448AB /* menu.png */,
+				E8227F5918D22E0400A448AB /* menu@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		E8D1332A18A594C7005932DF = {
 			isa = PBXGroup;
 			children = (
@@ -146,15 +174,17 @@
 				E8D1334818A594C8005932DF /* Main_iPhone.storyboard */,
 				E8D1334B18A594C8005932DF /* Main_iPad.storyboard */,
 				E8D1335118A594C8005932DF /* Images.xcassets */,
-				E8D1333D18A594C8005932DF /* Supporting Files */,
 				E89A8FB218CCBB9A000F176D /* MainMenuViewController.h */,
 				E89A8FB318CCBB9A000F176D /* MainMenuViewController.m */,
 				E89A8FB718CCBE67000F176D /* StartAPartyViewController.h */,
 				E89A8FB818CCBE67000F176D /* StartAPartyViewController.m */,
 				E89A8FBA18CD5A58000F176D /* SelectPartyPlaylistViewController.h */,
 				E89A8FBB18CD5A58000F176D /* SelectPartyPlaylistViewController.m */,
+				E8227F5418D22D7A00A448AB /* SWRevealViewController.h */,
+				E8227F5518D22D7A00A448AB /* SWRevealViewController.m */,
 				E89A8FC618CFF978000F176D /* PartyMasterViewController.h */,
 				E89A8FC718CFF978000F176D /* PartyMasterViewController.m */,
+				E8D1333D18A594C8005932DF /* Supporting Files */,
 			);
 			path = weJay;
 			sourceTree = "<group>";
@@ -162,6 +192,7 @@
 		E8D1333D18A594C8005932DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E8227F5718D22D8700A448AB /* Images */,
 				E8D1333E18A594C8005932DF /* weJay-Info.plist */,
 				E8D1333F18A594C8005932DF /* InfoPlist.strings */,
 				E8D1334218A594C8005932DF /* main.m */,
@@ -232,7 +263,7 @@
 		E8D1332B18A594C7005932DF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Brian Corbin";
 				TargetAttributes = {
 					E8D1335618A594C8005932DF = {
@@ -265,7 +296,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8D1334D18A594C8005932DF /* Main_iPad.storyboard in Resources */,
+				E8227F6018D6473600A448AB /* nextSong.png in Resources */,
+				E8227F5B18D22E0400A448AB /* menu@2x.png in Resources */,
+				E8227F6318D6473600A448AB /* prevSong.png in Resources */,
+				E8227F5A18D22E0400A448AB /* menu.png in Resources */,
+				E8227F6218D6473600A448AB /* playSong.png in Resources */,
 				E8D1335218A594C8005932DF /* Images.xcassets in Resources */,
+				E8227F6118D6473600A448AB /* pauseSong.png in Resources */,
 				E8D1334A18A594C8005932DF /* Main_iPhone.storyboard in Resources */,
 				E8D1334118A594C8005932DF /* InfoPlist.strings in Resources */,
 			);
@@ -291,6 +328,7 @@
 				E89A8FBF18CFEAB8000F176D /* DataManager.m in Sources */,
 				E89A8FBC18CD5A58000F176D /* SelectPartyPlaylistViewController.m in Sources */,
 				E8D1334718A594C8005932DF /* AppDelegate.m in Sources */,
+				E8227F5618D22D7A00A448AB /* SWRevealViewController.m in Sources */,
 				E89A8FB418CCBB9A000F176D /* MainMenuViewController.m in Sources */,
 				E8D1334318A594C8005932DF /* main.m in Sources */,
 				E89A8FC218CFEB61000F176D /* DominantColor.m in Sources */,
@@ -355,7 +393,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -395,7 +432,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -454,7 +490,6 @@
 		E8D1336C18A594C8005932DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/weJay.app/weJay";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -477,7 +512,6 @@
 		E8D1336D18A594C8005932DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/weJay.app/weJay";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

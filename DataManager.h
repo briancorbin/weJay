@@ -12,6 +12,8 @@
 @interface DataManager : NSObject
 
 @property (strong, nonatomic) NSArray *playQueue;
+@property (strong, nonatomic) NSString *partyName;
+@property (strong, nonatomic) NSString *partyPassword;
 
 +(DataManager *)sharedInstance;
 

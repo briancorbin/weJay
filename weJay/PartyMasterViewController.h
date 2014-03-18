@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 #import "DataManager.h"
 #import "DominantColor.h"
+#import "SWRevealViewController.h"
 
 @interface PartyMasterViewController : UIViewController
 

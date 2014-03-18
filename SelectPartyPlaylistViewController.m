@@ -100,15 +100,32 @@
 {
     if(indexPath.item == 0)
     {
-        dataManager.playQueue = allSongs;
+        NSMutableArray *tempPlaylist = [allSongs mutableCopy];
+        NSUInteger count = [tempPlaylist count];
+        for(int i=0; i< count; i++)
+        {
+            NSUInteger nElements = count - i;
+            int n = (arc4random() % nElements) + i;
+            [tempPlaylist exchangeObjectAtIndex:i withObjectAtIndex:n];
+        }
+        dataManager.playQueue = tempPlaylist;
     }
     else
     {
         MPMediaPlaylist *playlist = [playlists objectAtIndex:indexPath.item - 1];
-        dataManager.playQueue = playlist.items;
+        NSArray *playlistArray = [playlist items];
+        NSMutableArray *tempPlaylist = [playlistArray mutableCopy];
+        NSUInteger count = [tempPlaylist count];
+        for(int i=0; i< count; i++)
+        {
+            NSUInteger nElements = count - i;
+            int n = (arc4random() % nElements) + i;
+            [tempPlaylist exchangeObjectAtIndex:i withObjectAtIndex:n];
+        }
+        dataManager.playQueue = tempPlaylist;
     }
     
-    [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"PartyMasterViewController"] animated:YES];
+    [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"SWRevealViewController"] animated:YES];
     
 }
 

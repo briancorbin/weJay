@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SelectPartyPlaylistViewController.h"
+#import "DataManager.h"
 
 @interface StartAPartyViewController : UIViewController <UITextFieldDelegate>
 

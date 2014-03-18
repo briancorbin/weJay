@@ -14,10 +14,14 @@
 @property (weak, nonatomic) IBOutlet UILabel *songNameLbl;
 @property (weak, nonatomic) IBOutlet UILabel *artistAlbumLbl;
 @property (weak, nonatomic) IBOutlet MPVolumeView *mpVolumeSlider;
+@property (weak, nonatomic) IBOutlet UIButton *playPauseBtn;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (weak, nonatomic) IBOutlet UIView *rdyPartyView;
 
 - (IBAction)nextSongAction:(id)sender;
 - (IBAction)prevSongAction:(id)sender;
 - (IBAction)playPauseAction:(id)sender;
+- (IBAction)startThePartyAction:(id)sender;
 
 @property (weak, nonatomic) DataManager *dataManager;
 @property (weak, nonatomic) MPMusicPlayerController *mpController;
@@ -26,7 +30,7 @@
 
 @implementation PartyMasterViewController
 
-@synthesize dataManager, artistAlbumLbl, artworkImgView, songNameLbl, mpController, mpVolumeSlider;
+@synthesize dataManager, artistAlbumLbl, artworkImgView, songNameLbl, mpController, mpVolumeSlider, playPauseBtn, backgroundImageView, rdyPartyView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,20 +45,32 @@
 {
     [super viewDidLoad];
     
+    // Set the side bar button action. When it's tapped, it'll show up the sidebar.
+    //menuBtn.target = self.revealViewController;
+    //menuBtn.action = @selector(revealToggle:);
+    
+    // Set the gesture
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
     dataManager = [DataManager sharedInstance];
     
     self.navigationController.navigationBarHidden = YES;
 	
     mpController = [MPMusicPlayerController iPodMusicPlayer];
     
+    [self registerMediaPlayerNotifications];
+    
     MPMediaItemCollection *mediaCollection = [[MPMediaItemCollection alloc] initWithItems:dataManager.playQueue];
     [mpController setQueueWithItemCollection:mediaCollection];
-    [self registerMediaPlayerNotifications];
-    [mpController play];
+    [mpController stop];
+    
+    rdyPartyView.backgroundColor = [UIColor whiteColor];
+    [self.view bringSubviewToFront:rdyPartyView];
 }
 
 - (void) registerMediaPlayerNotifications
 {
+    
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
     
     [notificationCenter addObserver: self
@@ -77,28 +93,32 @@
     MPMediaItemArtwork *artwork = [currentItem valueForProperty: MPMediaItemPropertyArtwork];
     
     if (artwork) {
-        artworkImage = [artwork imageWithSize: CGSizeMake (200, 200)];
+        artworkImage = [artwork imageWithSize: CGSizeMake (275, 275)];
     }
+    
+    UIImage *backgroundImage = [self blur:artworkImage];
+    [backgroundImageView setImage:backgroundImage];
+    [backgroundImageView setFrame:CGRectMake(backgroundImageView.frame.origin.x, backgroundImageView.frame.origin.y, self.view.frame.size.width, self.view.frame.size.height)];
+    
     DominantColor *newDominantColor = [[DominantColor alloc] init];
     UIColor *dominantColor = [newDominantColor getDominantColor:artworkImage];
     mpVolumeSlider.tintColor = dominantColor;
-    
+    //menuBtn.tintColor = dominantColor;
     
     [artworkImgView setImage:artworkImage];
     
     NSString *titleString = [currentItem valueForProperty:MPMediaItemPropertyTitle];
-    if (titleString) {
+    if (titleString)
         songNameLbl.text = [NSString stringWithFormat:@"%@",titleString];
-    } else {
+    else
         songNameLbl.text = @"Unknown title";
-    }
     
     NSString *albumString = [currentItem valueForProperty:MPMediaItemPropertyAlbumTitle];
     NSString *artistString = [currentItem valueForProperty:MPMediaItemPropertyArtist];
     if (artistString)
         artistString = [NSString stringWithFormat:@"%@ — ",artistString];
     else
-        artistString = @"Unknown Artist";
+        artistString = @"Unknown Artist — ";
     if(albumString)
         albumString = [NSString stringWithFormat:@"%@",albumString];
     else
@@ -112,14 +132,14 @@
     MPMusicPlaybackState playbackState = [mpController playbackState];
     
     if (playbackState == MPMusicPlaybackStatePaused) {
-        //[playPauseBtn setImage:[UIImage imageNamed:@"playButton.png"] forState:UIControlStateNormal];
+        [playPauseBtn setImage:[UIImage imageNamed:@"playSong.png"] forState:UIControlStateNormal];
         
     } else if (playbackState == MPMusicPlaybackStatePlaying) {
-        //[playPauseBtn setImage:[UIImage imageNamed:@"pauseButton.png"] forState:UIControlStateNormal];
+        [playPauseBtn setImage:[UIImage imageNamed:@"pauseSong.png"] forState:UIControlStateNormal];
         
     } else if (playbackState == MPMusicPlaybackStateStopped) {
         
-        //[playPauseBtn setImage:[UIImage imageNamed:@"playButton.png"] forState:UIControlStateNormal];
+        [playPauseBtn setImage:[UIImage imageNamed:@"playSong.png"] forState:UIControlStateNormal];
         [mpController stop];
     }
     
@@ -137,6 +157,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (UIImage*) blur:(UIImage*)theImage
+{
+    // create our blurred image
+    CIContext *context = [CIContext contextWithOptions:nil];
+    CIImage *inputImage = [CIImage imageWithCGImage:theImage.CGImage];
+    
+    // setting up Gaussian Blur (we could use one of many filters offered by Core Image)
+    CIFilter *filter = [CIFilter filterWithName:@"CIGaussianBlur"];
+    [filter setValue:inputImage forKey:kCIInputImageKey];
+    [filter setValue:[NSNumber numberWithFloat:15.0f] forKey:@"inputRadius"];
+    CIImage *result = [filter valueForKey:kCIOutputImageKey];
+    
+    // CIGaussianBlur has a tendency to shrink the image a little,
+    // this ensures it matches up exactly to the bounds of our original image
+    CGImageRef cgImage = [context createCGImage:result fromRect:[inputImage extent]];
+    return [UIImage imageWithCGImage:cgImage scale:.20 orientation:UIImageOrientationUp];
+}
+
 - (IBAction)nextSongAction:(id)sender {
     [mpController skipToNextItem];
 }
@@ -151,9 +189,16 @@
 - (IBAction)playPauseAction:(id)sender {
     if ([mpController playbackState] == MPMusicPlaybackStatePlaying) {
         [mpController pause];
-        
+        NSLog(@"Paused...");
     } else {
         [mpController play];
+        NSLog(@"Played...");
     }
 }
+
+- (IBAction)startThePartyAction:(id)sender {
+    [mpController play];
+    [rdyPartyView removeFromSuperview];
+}
+
 @end

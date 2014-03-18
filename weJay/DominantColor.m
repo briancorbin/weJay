@@ -67,6 +67,8 @@ struct pixel {
         
         free(pixels);
     }
+    if(red == 0 && green == 0 && blue == 0)
+        return [UIColor blackColor];
     return [UIColor colorWithRed:red/255.0f green:green/255.0f blue:blue/255.0f alpha:1.0f];
 }
 
