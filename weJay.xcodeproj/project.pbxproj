@@ -21,6 +21,7 @@
 		E89A8FBF18CFEAB8000F176D /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E89A8FBE18CFEAB8000F176D /* DataManager.m */; };
 		E89A8FC218CFEB61000F176D /* DominantColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E89A8FC118CFEB61000F176D /* DominantColor.m */; };
 		E89A8FC818CFF978000F176D /* PartyMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89A8FC718CFF978000F176D /* PartyMasterViewController.m */; };
+		E8C8DDEE18D7E6CE0078401E /* RightSWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C8DDED18D7E6CE0078401E /* RightSWRevealViewController.m */; };
 		E8D1333718A594C8005932DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D1333618A594C8005932DF /* Foundation.framework */; };
 		E8D1333918A594C8005932DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D1333818A594C8005932DF /* CoreGraphics.framework */; };
 		E8D1333B18A594C8005932DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D1333A18A594C8005932DF /* UIKit.framework */; };
@@ -70,6 +71,8 @@
 		E89A8FC118CFEB61000F176D /* DominantColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DominantColor.m; sourceTree = "<group>"; };
 		E89A8FC618CFF978000F176D /* PartyMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartyMasterViewController.h; sourceTree = "<group>"; };
 		E89A8FC718CFF978000F176D /* PartyMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartyMasterViewController.m; sourceTree = "<group>"; };
+		E8C8DDEC18D7E6CE0078401E /* RightSWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightSWRevealViewController.h; sourceTree = "<group>"; };
+		E8C8DDED18D7E6CE0078401E /* RightSWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightSWRevealViewController.m; sourceTree = "<group>"; };
 		E8D1333318A594C8005932DF /* weJay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weJay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D1333618A594C8005932DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E8D1333818A594C8005932DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -182,6 +185,8 @@
 				E89A8FBB18CD5A58000F176D /* SelectPartyPlaylistViewController.m */,
 				E8227F5418D22D7A00A448AB /* SWRevealViewController.h */,
 				E8227F5518D22D7A00A448AB /* SWRevealViewController.m */,
+				E8C8DDEC18D7E6CE0078401E /* RightSWRevealViewController.h */,
+				E8C8DDED18D7E6CE0078401E /* RightSWRevealViewController.m */,
 				E89A8FC618CFF978000F176D /* PartyMasterViewController.h */,
 				E89A8FC718CFF978000F176D /* PartyMasterViewController.m */,
 				E8D1333D18A594C8005932DF /* Supporting Files */,
@@ -331,6 +336,7 @@
 				E8227F5618D22D7A00A448AB /* SWRevealViewController.m in Sources */,
 				E89A8FB418CCBB9A000F176D /* MainMenuViewController.m in Sources */,
 				E8D1334318A594C8005932DF /* main.m in Sources */,
+				E8C8DDEE18D7E6CE0078401E /* RightSWRevealViewController.m in Sources */,
 				E89A8FC218CFEB61000F176D /* DominantColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
