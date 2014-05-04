@@ -53,6 +53,9 @@
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
     dataManager = [DataManager sharedInstance];
+    dataManager.volChangePcnt = .35;
+    dataManager.downvotePcnt = .30;
+    dataManager.viewSongs = 5;
     
     self.navigationController.navigationBarHidden = YES;
 	
@@ -132,14 +135,14 @@
     MPMusicPlaybackState playbackState = [mpController playbackState];
     
     if (playbackState == MPMusicPlaybackStatePaused) {
-        [playPauseBtn setImage:[UIImage imageNamed:@"playSong.png"] forState:UIControlStateNormal];
+        [playPauseBtn setImage:[UIImage imageNamed:@"playButtonWhite.png"] forState:UIControlStateNormal];
         
     } else if (playbackState == MPMusicPlaybackStatePlaying) {
-        [playPauseBtn setImage:[UIImage imageNamed:@"pauseSong.png"] forState:UIControlStateNormal];
+        [playPauseBtn setImage:[UIImage imageNamed:@"pauseButtonWhite.png"] forState:UIControlStateNormal];
         
     } else if (playbackState == MPMusicPlaybackStateStopped) {
         
-        [playPauseBtn setImage:[UIImage imageNamed:@"playSong.png"] forState:UIControlStateNormal];
+        [playPauseBtn setImage:[UIImage imageNamed:@"playButtonWhite.png"] forState:UIControlStateNormal];
         [mpController stop];
     }
     
@@ -189,10 +192,8 @@
 - (IBAction)playPauseAction:(id)sender {
     if ([mpController playbackState] == MPMusicPlaybackStatePlaying) {
         [mpController pause];
-        NSLog(@"Paused...");
     } else {
         [mpController play];
-        NSLog(@"Played...");
     }
 }
 

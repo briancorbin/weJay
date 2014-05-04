@@ -22,6 +22,13 @@
 		E89A8FC218CFEB61000F176D /* DominantColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E89A8FC118CFEB61000F176D /* DominantColor.m */; };
 		E89A8FC818CFF978000F176D /* PartyMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89A8FC718CFF978000F176D /* PartyMasterViewController.m */; };
 		E8C8DDEE18D7E6CE0078401E /* RightSWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C8DDED18D7E6CE0078401E /* RightSWRevealViewController.m */; };
+		E8C8DDF518D88BF10078401E /* nextButtonWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = E8C8DDF018D88BF10078401E /* nextButtonWhite.png */; };
+		E8C8DDF618D88BF10078401E /* pauseButtonWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = E8C8DDF118D88BF10078401E /* pauseButtonWhite.png */; };
+		E8C8DDF718D88BF10078401E /* playButtonWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = E8C8DDF218D88BF10078401E /* playButtonWhite.png */; };
+		E8C8DDF818D88BF10078401E /* prevButtonWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = E8C8DDF318D88BF10078401E /* prevButtonWhite.png */; };
+		E8C8DDF918D88BF10078401E /* thumbsDownButtonWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = E8C8DDF418D88BF10078401E /* thumbsDownButtonWhite.png */; };
+		E8C8DE0018D8A3460078401E /* PartySettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C8DDFF18D8A3460078401E /* PartySettingsViewController.m */; };
+		E8C8DE0418D8C5780078401E /* PartyOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C8DE0318D8C5780078401E /* PartyOptionsViewController.m */; };
 		E8D1333718A594C8005932DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D1333618A594C8005932DF /* Foundation.framework */; };
 		E8D1333918A594C8005932DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D1333818A594C8005932DF /* CoreGraphics.framework */; };
 		E8D1333B18A594C8005932DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D1333A18A594C8005932DF /* UIKit.framework */; };
@@ -73,6 +80,15 @@
 		E89A8FC718CFF978000F176D /* PartyMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartyMasterViewController.m; sourceTree = "<group>"; };
 		E8C8DDEC18D7E6CE0078401E /* RightSWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightSWRevealViewController.h; sourceTree = "<group>"; };
 		E8C8DDED18D7E6CE0078401E /* RightSWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightSWRevealViewController.m; sourceTree = "<group>"; };
+		E8C8DDF018D88BF10078401E /* nextButtonWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextButtonWhite.png; sourceTree = "<group>"; };
+		E8C8DDF118D88BF10078401E /* pauseButtonWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pauseButtonWhite.png; sourceTree = "<group>"; };
+		E8C8DDF218D88BF10078401E /* playButtonWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButtonWhite.png; sourceTree = "<group>"; };
+		E8C8DDF318D88BF10078401E /* prevButtonWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prevButtonWhite.png; sourceTree = "<group>"; };
+		E8C8DDF418D88BF10078401E /* thumbsDownButtonWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbsDownButtonWhite.png; sourceTree = "<group>"; };
+		E8C8DDFE18D8A3460078401E /* PartySettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartySettingsViewController.h; sourceTree = "<group>"; };
+		E8C8DDFF18D8A3460078401E /* PartySettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartySettingsViewController.m; sourceTree = "<group>"; };
+		E8C8DE0218D8C5780078401E /* PartyOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartyOptionsViewController.h; sourceTree = "<group>"; };
+		E8C8DE0318D8C5780078401E /* PartyOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartyOptionsViewController.m; sourceTree = "<group>"; };
 		E8D1333318A594C8005932DF /* weJay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weJay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D1333618A594C8005932DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E8D1333818A594C8005932DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -123,14 +139,44 @@
 		E8227F5718D22D8700A448AB /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E8227F5818D22E0400A448AB /* menu.png */,
+				E8227F5918D22E0400A448AB /* menu@2x.png */,
+				E8C8DDFA18D88BF60078401E /* Black Buttons */,
+				E8C8DDEF18D88BE30078401E /* White Buttons */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		E8C8DDEF18D88BE30078401E /* White Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				E8C8DDF018D88BF10078401E /* nextButtonWhite.png */,
+				E8C8DDF118D88BF10078401E /* pauseButtonWhite.png */,
+				E8C8DDF218D88BF10078401E /* playButtonWhite.png */,
+				E8C8DDF318D88BF10078401E /* prevButtonWhite.png */,
+				E8C8DDF418D88BF10078401E /* thumbsDownButtonWhite.png */,
+			);
+			name = "White Buttons";
+			sourceTree = "<group>";
+		};
+		E8C8DDFA18D88BF60078401E /* Black Buttons */ = {
+			isa = PBXGroup;
+			children = (
 				E8227F5C18D6473600A448AB /* nextSong.png */,
 				E8227F5D18D6473600A448AB /* pauseSong.png */,
 				E8227F5E18D6473600A448AB /* playSong.png */,
 				E8227F5F18D6473600A448AB /* prevSong.png */,
-				E8227F5818D22E0400A448AB /* menu.png */,
-				E8227F5918D22E0400A448AB /* menu@2x.png */,
 			);
-			name = Images;
+			name = "Black Buttons";
+			sourceTree = "<group>";
+		};
+		E8C8DE0118D8C2450078401E /* PartySettingsVC's */ = {
+			isa = PBXGroup;
+			children = (
+				E8C8DE0218D8C5780078401E /* PartyOptionsViewController.h */,
+				E8C8DE0318D8C5780078401E /* PartyOptionsViewController.m */,
+			);
+			name = "PartySettingsVC's";
 			sourceTree = "<group>";
 		};
 		E8D1332A18A594C7005932DF = {
@@ -187,6 +233,9 @@
 				E8227F5518D22D7A00A448AB /* SWRevealViewController.m */,
 				E8C8DDEC18D7E6CE0078401E /* RightSWRevealViewController.h */,
 				E8C8DDED18D7E6CE0078401E /* RightSWRevealViewController.m */,
+				E8C8DDFE18D8A3460078401E /* PartySettingsViewController.h */,
+				E8C8DDFF18D8A3460078401E /* PartySettingsViewController.m */,
+				E8C8DE0118D8C2450078401E /* PartySettingsVC's */,
 				E89A8FC618CFF978000F176D /* PartyMasterViewController.h */,
 				E89A8FC718CFF978000F176D /* PartyMasterViewController.m */,
 				E8D1333D18A594C8005932DF /* Supporting Files */,
@@ -302,12 +351,17 @@
 			files = (
 				E8D1334D18A594C8005932DF /* Main_iPad.storyboard in Resources */,
 				E8227F6018D6473600A448AB /* nextSong.png in Resources */,
+				E8C8DDF618D88BF10078401E /* pauseButtonWhite.png in Resources */,
 				E8227F5B18D22E0400A448AB /* menu@2x.png in Resources */,
 				E8227F6318D6473600A448AB /* prevSong.png in Resources */,
+				E8C8DDF718D88BF10078401E /* playButtonWhite.png in Resources */,
 				E8227F5A18D22E0400A448AB /* menu.png in Resources */,
+				E8C8DDF918D88BF10078401E /* thumbsDownButtonWhite.png in Resources */,
 				E8227F6218D6473600A448AB /* playSong.png in Resources */,
+				E8C8DDF818D88BF10078401E /* prevButtonWhite.png in Resources */,
 				E8D1335218A594C8005932DF /* Images.xcassets in Resources */,
 				E8227F6118D6473600A448AB /* pauseSong.png in Resources */,
+				E8C8DDF518D88BF10078401E /* nextButtonWhite.png in Resources */,
 				E8D1334A18A594C8005932DF /* Main_iPhone.storyboard in Resources */,
 				E8D1334118A594C8005932DF /* InfoPlist.strings in Resources */,
 			);
@@ -332,7 +386,9 @@
 				E89A8FC818CFF978000F176D /* PartyMasterViewController.m in Sources */,
 				E89A8FBF18CFEAB8000F176D /* DataManager.m in Sources */,
 				E89A8FBC18CD5A58000F176D /* SelectPartyPlaylistViewController.m in Sources */,
+				E8C8DE0018D8A3460078401E /* PartySettingsViewController.m in Sources */,
 				E8D1334718A594C8005932DF /* AppDelegate.m in Sources */,
+				E8C8DE0418D8C5780078401E /* PartyOptionsViewController.m in Sources */,
 				E8227F5618D22D7A00A448AB /* SWRevealViewController.m in Sources */,
 				E89A8FB418CCBB9A000F176D /* MainMenuViewController.m in Sources */,
 				E8D1334318A594C8005932DF /* main.m in Sources */,

@@ -14,6 +14,9 @@
 @property (strong, nonatomic) NSArray *playQueue;
 @property (strong, nonatomic) NSString *partyName;
 @property (strong, nonatomic) NSString *partyPassword;
+@property float volChangePcnt;
+@property float downvotePcnt;
+@property int viewSongs;
 
 +(DataManager *)sharedInstance;
 
